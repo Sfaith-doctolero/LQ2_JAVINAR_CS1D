@@ -1,20 +1,21 @@
 //Name: Javinar, Stephanie Faith D.
 
 
-//Instatntiate 5 Variables (name, adress, age Class Roler, and Course)
+//Instatntiate 5 Variables (name, adress, age Class Role, and Course)
 let name = prompt("Enter your Name:");
 let address = prompt("Enter your Address:");
 let age = parseInt(prompt("Enter your Age:"));
 let classRole = prompt("Enter your Class Role (Officer, Student, Teacher):");
 let course = prompt("Enter your Course (BSCS, BSM, BAEL):");
-fallback code 
+//condition to check if any of the input is invalid 
 if (!name || !address || isNaN(age) || !classRole || !course) {
   alert("Invalid input. Please provide all required information.");
 } else {
 
-  // Course-based conditional logic
+//Determines the number of iterations
   let iterations = Math.floor(age / 4);
-
+//check the class role
+//fix for case sensitivity
   switch (course.toUpperCase()) {
     case "BSCS":
       switch (classRole.toUpperCase()) {
